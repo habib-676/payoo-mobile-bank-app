@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
+    <title>Payoo Mobile Bank</title>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/847464fa6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN (After Tailwind) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- fav -->
+    <link rel="shortcut icon" href="./assets/Group.png" type="image/x-icon" />
+
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .outfit {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Main is ready</h1>
+  <body class="bg-slate-800 outfit">
+    <main class="max-w-md min-h-screen mx-auto bg-slate-200 py-6">
+      <nav
+        class="bg-slate-100 flex justify-around px-6 py-4 border-b border-[#080808]"
+      >
+        <img class="w-12" src="./assets/Group.png" alt="" />
+        <div class="mr-20">
+          <p class="font-bold text-2xl">$45000</p>
+          <p>Available Balance</p>
+        </div>
+        <button class="btn shadow-md text-gray-600 font-normal">
+          <i class="fa-solid fa-right-from-bracket"></i> <span>Log Out</span>
+        </button>
+      </nav>
+    </main>
   </body>
 </html>
