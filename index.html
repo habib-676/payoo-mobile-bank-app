@@ -14,8 +14,24 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .outfit {
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body class="bg-slate-800">
+  <body class="bg-slate-800 outfit">
     <section class="max-w-md min-h-screen mx-auto bg-slate-200 py-6">
       <header>
         <nav class="flex justify-center items-center my-10">
@@ -35,30 +51,25 @@
         <form class="card-body">
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Email</span>
+              <span class="font-medium">Mobile Number</span>
             </label>
             <input
-              type="email"
-              placeholder="email"
+              type="number"
+              placeholder="Enter your number"
               class="input input-bordered"
               required
             />
           </div>
           <div class="form-control">
             <label class="label">
-              <span class="label-text">Password</span>
+              <span class="font-medium">4 digit pin</span>
             </label>
             <input
-              type="password"
-              placeholder="password"
+              type="number"
+              placeholder="Enter 4 digit pin"
               class="input input-bordered"
               required
             />
-            <label class="label">
-              <a href="#" class="label-text-alt link link-hover"
-                >Forgot password?</a
-              >
-            </label>
           </div>
           <div class="form-control mt-6">
             <button class="btn btn-primary">Login</button>
