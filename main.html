@@ -68,12 +68,14 @@
           class="bg-base-100 py-6 grid grid-cols-3 gap-2 rounded-b-md rounded-l-md shadow-xl"
         >
           <div
+            id="add-money-box"
             class="border border-[#0808081A] py-5 px-7 rounded-md flex flex-col gap-2 justify-center items-center"
           >
             <img class="w-6" src="./assets/wallet1.png" alt="" />
             <p class="text-[#080808B3] text-center">Add Money</p>
           </div>
           <div
+            id="cash-out-box"
             class="border border-[#0808081A] py-5 px-7 rounded-md flex flex-col gap-2 justify-center items-center"
           >
             <img class="w-6" src="./assets/money1.png" alt="" />
@@ -107,7 +109,7 @@
       </section>
 
       <!-- add money section -->
-      <section>
+      <section id="add-money-section">
         <h2 class="text-[18px] font-semibold p-6">Add Money</h2>
 
         <!-- form -->
@@ -165,7 +167,7 @@
       </section>
 
       <!-- cash out section -->
-      <section>
+      <section id="cash-out-section">
         <h2 class="text-[18px] font-semibold p-6">Cash Out</h2>
 
         <!-- form -->
@@ -212,6 +214,8 @@
         </form>
       </section>
     </main>
+
     <script src="./scripts/addMoney.js"></script>
+    <script src="./scripts/toogle.js"></script>
   </body>
 </html>
