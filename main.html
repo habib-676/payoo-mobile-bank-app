@@ -53,6 +53,7 @@
         </button>
       </nav>
 
+      <!-- all cards section -->
       <section class="p-6">
         <h1 class="mb-3 font-bold text-2xl">🔥 Welcome to Payooo!</h1>
         <p class="mb-6 text-[#08080880]">
@@ -61,7 +62,9 @@
         </p>
 
         <!-- cards div -->
-        <div class="grid grid-cols-3 gap-2 rounded-b-md rounded-l-md shadow-xl">
+        <div
+          class="bg-base-100 py-6 grid grid-cols-3 gap-2 rounded-b-md rounded-l-md shadow-xl"
+        >
           <div
             class="border border-[#0808081A] py-5 px-7 rounded-md flex flex-col gap-2 justify-center items-center"
           >
@@ -99,6 +102,60 @@
             <p class="text-[#080808B3] text-center">Transaction</p>
           </div>
         </div>
+      </section>
+
+      <!-- add money section -->
+      <section>
+        <h2 class="text-[18px] font-semibold p-6">Add Money</h2>
+
+        <!-- form -->
+        <form class="card-body">
+          <div class="form-control">
+            <legend>Select a Bank</legend>
+            <select class="select select-primary w-full max-w-xs">
+              <option disabled selected>Select Bank</option>
+              <option value="bkash">Bkash</option>
+              <option value="nagad">nagad</option>
+              <option value="dbbl">DBBL</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Bank Account Number </span>
+            </label>
+            <input
+              type="number"
+              placeholder="Enter 11 digit account number"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Amount to Add</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Add Amount to add"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Pin Number</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Enter 4 digit pin number"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary">Login</button>
+          </div>
+        </form>
       </section>
     </main>
   </body>
