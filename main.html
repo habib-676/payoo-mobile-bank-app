@@ -163,6 +163,54 @@
           </div>
         </form>
       </section>
+
+      <!-- cash out section -->
+      <section>
+        <h2 class="text-[18px] font-semibold p-6">Cash Out</h2>
+
+        <!-- form -->
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold"> Agent Number </span>
+            </label>
+            <input
+              type="number"
+              placeholder="Enter 11 digit number"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Amount</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Add Amount to withdraw"
+              class="input input-bordered"
+              id="cash-out-amount"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text font-bold">Pin Number</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Enter 4 digit pin number"
+              class="input input-bordered"
+              required
+            />
+          </div>
+          <div class="form-control mt-6">
+            <button id="withdraw-money-btn" class="btn btn-primary">
+              Withdraw Money
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <script src="./scripts/addMoney.js"></script>
   </body>
