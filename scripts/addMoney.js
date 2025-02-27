@@ -11,6 +11,7 @@ document
         document.getElementById("main-balance").innerText = amount + balance;
       } else {
         alert("Enter amount correctly");
+        return;
       }
     } else {
       alert("This pin is not correct !!!!!!");

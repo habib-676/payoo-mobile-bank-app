@@ -7,10 +7,11 @@ document
     let balance = parseFloat(document.getElementById("main-balance").innerText);
 
     if (pin === 1234) {
-      if (amount > 0) {
+      if (balance > amount) {
         document.getElementById("main-balance").innerText = balance - amount;
       } else {
         alert("Enter amount correctly");
+        return;
       }
     } else {
       alert("This pin is not correct !!!!!!");
